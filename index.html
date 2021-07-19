@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Estagio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro de Clientes</h1>
+    </header>
+    <div class="main">
+        <a  onclick="abrirModalCadastro()">Cadastrar novo cliente</a>
+        <div class="modal-cadastro-cliente">
+            <div class="cadastro-cliente">
+                <div onclick="fecharModalCadastro()" class="close-modal">X</div>
+                <h1>Novo Cliente</h1>
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome_cliente">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email_cliente">
+                </div>
+                <div class="campo">
+                    <label for="cpf">CPF/CNPJ:</label>
+                    <input type="text" name="cpf_cliente">
+                </div>
+                <div class="campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="text" name="telefone_cliente">
+                </div>
+                <div class="campo">
+                    <label for="cep">CEP:</label>
+                    <input type="text" name="cep_cliente">
+                </div>
+                <div class="campo">
+                    <label for="logradouro">Logradouro:</label>
+                    <input type="text" name="logradouro_cliente">
+                </div>
+                <div class="campo">
+                    <label for="numero">Número:</label>
+                    <input type="text" name="numero_cliente">
+                </div>
+                <div class="campo">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro_cliente">
+                </div>
+                <div class="campo">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade_cliente">
+                </div>
+                <div class="campo">
+                    <label for="estado">Estado:</label>
+                    <input type="text" name="estado_cliente">
+                </div>
+                <input type="submit" name="acao" value="Cadastrar Cliente">
+            </div>
+        </div>
+
+        <table class="tabela-clientes">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>CPF</th>
+                    <th>Telefone</th>
+                    <th>CEP</th>
+                    <th>Logradouro</th>
+                    <th>Número</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <h4>&copy; Todos os direitos reservados</h4>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
